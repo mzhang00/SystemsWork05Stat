@@ -8,9 +8,8 @@
 
 int main(){
     struct stat sb;
-    printf("hello\n");
     stat("makefile", &sb);
-    printf("hello\n");
+    printf("File size of makefile: %ld\n", sb.st_size);
 
     return 0;
 }
